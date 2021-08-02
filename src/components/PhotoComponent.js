@@ -9,7 +9,7 @@ export default function Photos() {
     const [isPhotosFetched, setPhotosFetched] = useState(false);
     useEffect(() => {
         if (!isPhotosFetched) {
-            axios.get(`https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=29feae4e85ba959ffc0465f069c7b693&format=json&nojsoncallback=1&api_sig=f5a1af6733db915d236a37ea5a5b4a81`)
+            axios.get(`https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=09d770a1c3e5e480517dff043f458023&format=json&nojsoncallback=1&api_sig=83af9141cbcfd308211246621555ac92`)
                 .then(({ data }) => {
                     console.log(data)
 
